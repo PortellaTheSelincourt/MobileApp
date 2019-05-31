@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.por16002139.lesson41.com.example.por16002139.A1MobileTech.ContactUsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bathCollegeGreen"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <ImageView
+                android:id="@+id/main_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:alpha="0.8"
+                android:src="@drawable/term_times" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_pic"
+                android:layout_alignTop="@id/main_pic"
+                android:layout_alignRight="@id/main_pic"
+                android:layout_alignBottom="@id/main_pic"
+                android:layout_margin="1dp"
+                android:gravity="top|center"
+                android:paddingLeft="3dp"
+                android:text="Autumn 2017\n2017-18 Term 1\nMonday 4th September - Friday 20th October\n2017-18Term 2\nMonday 30th October - Friday 15th December\n\nSpring 2018\n2017-18 Term 3\nWednesday 3rd January - Friday 9th February\n2017-18 Term 4\nMonday 19th February - Friday 23rd March\n\nSummer 2018\n2017-18 Term 5\nMonday 9th April - Friday 25th May\nTerm 6\nMonday 4th june - Friday 29th June"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
+

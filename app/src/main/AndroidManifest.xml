@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.por16002139.lesson41">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/College_app"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+           <!--Sets HomeActivity as the start page -->
+        <activity android:name="com.example.por16002139.A1MobileTech.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--Sets HomeActivity a PARENT of ContactUsActivity-->
+        <activity android:name="com.example.por16002139.A1MobileTech.ContactUsActivity"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.por16002139.A1MobileTech.HomeActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.por16002139.A1MobileTech.HomeActivity"/>
+        </activity>
+        <!--Sets ContactUsActivity a PARENT of ContactForm-->
+        <activity
+            android:name="com.example.por16002139.A1MobileTech.ContactForm"
+            android:label="@string/contact_form"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.por16002139.A1MobileTech.ContactUsActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.por16002139.A1MobileTech.ContactUsActivity"/>
+        </activity>
+        <!--Sets HomeActivity a PARENT of TermTimes-->
+        <activity
+            android:name="com.example.por16002139.A1MobileTech.TermTimes"
+            android:label="@string/term_times"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.por16002139.A1MobileTech.HomeActivity"
+            tools:targetApi="jelly_bean"/>
+         <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.por16002139.A1MobileTech.HomeActivity"/>
+        <!--Sets HomeActivity a PARENT of CourseDetailActivity-->
+        <activity android:name="com.example.por16002139.A1MobileTech.CourseActivity"
+        android:label="@string/course_list"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:parentActivityName="com.example.por16002139.A1MobileTech.HomeActivity"
+        tools:targetApi="jelly_bean">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.por16002139.A1MobileTech.HomeActivity"/>
+    </activity>
+        <!--Sets CourseActivity a PARENT of CourseDetailActivity-->
+        <activity android:name="com.example.por16002139.A1MobileTech.CourseDetailActivity"
+            android:label="@string/Course_detail_activity_title"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.por16002139.A1MobileTech.CourseActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.por16002139.A1MobileTech.CourseActivity"/>
+        </activity>
+    </application>
+</manifest>
